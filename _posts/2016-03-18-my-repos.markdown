@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "My Repositories"
+date:   2016-03-18 15:00:00 -0400
+categories: jekyll intro
+---
+
+## My Github Repositories ##
+
+
+###  [ pooja-songs][2]
+
+Markdown source for the Pooja ebook
+
+Updated Mar 11, 2016
+
+###  [ Geofencing][3]
+
+Geofencing for Android Smartwatch
+
+Updated Feb 5, 2016
+
+###  [ trim_video][4]
+
+Batch files to trim video
+
+Updated Jun 30, 2015
+
+###  [ superputty][5]
+
+Automatically exported from code.google.com/p/superputty
+
+Updated Mar 30, 2015
+
+###  [ putty-protocol][6]
+
+Execute putty with parameters like ssh://login@host
+
+[1]: https://avatars2.githubusercontent.com/u/397057?v=3&s=460
+[2]: /vrajeshkanna/pooja-songs
+[3]: /vrajeshkanna/Geofencing
+[4]: /vrajeshkanna/trim_video
+[5]: /vrajeshkanna/superputty
+[6]: /vrajeshkanna/putty-protocol
