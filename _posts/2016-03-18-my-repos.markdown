@@ -7,6 +7,11 @@ categories: jekyll intro
 
 ## My Github Repositories ##
 
+###  [ send-status-android ][1]
+
+An android app to send quick statuses via Whatsapp
+
+Updated Mar 11, 2016
 
 ###  [ pooja-songs][2]
 
@@ -36,9 +41,9 @@ Updated Mar 30, 2015
 
 Execute putty with parameters like ssh://login@host
 
-[1]: https://avatars2.githubusercontent.com/u/397057?v=3&s=460
-[2]: /vrajeshkanna/pooja-songs
-[3]: /vrajeshkanna/Geofencing
-[4]: /vrajeshkanna/trim_video
-[5]: /vrajeshkanna/superputty
-[6]: /vrajeshkanna/putty-protocol
+[1]: https://github.com/vrajeshkanna/send-status-android
+[2]: https://github.com/vrajeshkanna/pooja-songs
+[3]: https://github.com/vrajeshkanna/Geofencing
+[4]: https://github.com/vrajeshkanna/trim_video
+[5]: https://github.com/vrajeshkanna/superputty
+[6]: https://github.com/vrajeshkanna/putty-protocol
