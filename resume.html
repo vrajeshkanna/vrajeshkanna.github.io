@@ -1,0 +1,822 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <title>RajeshKanna</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
+        <style>
+            /* Utils */
+            /*----- Colors -----*/
+            /*----- Fonts -----*/
+            /*----- Dimensions and sizes -----*/
+            /* Base */
+            @font-face {
+              font-family: 'Josefin Sans';
+              font-style: normal;
+              font-weight: 300;
+              src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Josefin Sans';
+              font-style: normal;
+              font-weight: 700;
+              src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 300;
+              src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 400;
+              src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 700;
+              src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: italic;
+              font-weight: 300;
+              src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: italic;
+              font-weight: 400;
+              src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: italic;
+              font-weight: 700;
+              src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+            }
+            
+            body {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              background: #f8f8f8;
+              margin: 50px 0 100px;
+              letter-spacing: .3px;
+              color: #39424B; }
+            
+            h1, h2, h3, h4, h5, h6 {
+              text-transform: uppercase;
+              margin: 0; }
+            
+            h1 {
+              font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+              font-weight: 700;
+              font-size: 40px;
+              letter-spacing: 1px; }
+            
+            h2 {
+              font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              font-size: 16px;
+              letter-spacing: .5px; }
+            
+            h3 {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              font-size: 14px;
+              letter-spacing: .4px; }
+              h3.bold {
+                font-weight: 700; }
+            
+            h4 {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              font-size: 12px; }
+              h4.bold {
+                font-weight: 700; }
+            
+            h5 {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              font-size: 11px; }
+              h5.italic {
+                font-style: italic; }
+            
+            h6 {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              font-size: 10px; }
+            
+            a {
+              color: inherit;
+              text-decoration: inherit; }
+              a:hover {
+                color: #2895F1; }
+              a .fa-external-link {
+                font-size: 10px;
+                vertical-align: text-top; }
+            
+            p,
+            li {
+              font-size: 11px; }
+            
+            blockquote {
+              font-size: 11px;
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              font-style: italic;
+              margin: 10px 25px; }
+            
+            em {
+              color: #999; }
+            
+            ul {
+              margin: 10px 0 0;
+              -webkit-padding-start: 25px; }
+              ul li {
+                padding-left: 10px; }
+              ul.minimal {
+                list-style: none;
+                padding: 0; }
+                ul.minimal li {
+                  margin-bottom: 3px;
+                  padding-left: 0; }
+              ul.two-column {
+                -webkit-column-count: 2;
+                -webkit-column-gap: 28px;
+                -moz-column-count: 2;
+                     column-count: 2;
+                -moz-column-gap: 28px;
+                     column-gap: 28px; }
+                ul.two-column li {
+                  padding-left: 0; }
+            
+            @page {
+              size: A4; }
+            
+            .container {
+              padding-top: 20px; }
+            
+            .keyline {
+              width: 45px;
+              margin: 8px 0 10px;
+              border-top: 1px solid #56817A; }
+            
+            .pull-left {
+              float: left; }
+            
+            .pull-right {
+              float: right; }
+            
+            .clearfix:after {
+              content: "";
+              display: table;
+              clear: both; }
+            
+            .profile-pic {
+              margin-top: -5px;
+              margin-right: 18px; }
+              .profile-pic img {
+                height: 52px;
+                width: 52px;
+                border-radius: 50%;
+                border: 2px solid #56817A; }
+            
+            .summary {
+              margin: 5px 0 5px; }
+            
+            /* Layouts */
+            .page {
+              background: white;
+              width: 612px;
+              min-height: 792px;
+              display: block;
+              margin: 0 auto;
+              border-top: 10px solid #56817A;
+              padding: 36px 22px 30px 34px;
+              box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
+              .page:after {
+                content: "";
+                display: table;
+                clear: both; }
+            
+            .left-column {
+              float: left;
+              width: 160px;
+              margin-right: 20px;
+              word-wrap: break-word; }
+            
+            .right-column {
+              width: auto;
+              overflow: hidden; }
+            
+            .item {
+              margin-bottom: 15px; }
+              .item:last-child {
+                margin-bottom: 0; }
+            
+            @media print {
+              body {
+                margin: 0; }
+              .page {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 36px 0 30px;
+                box-shadow: none; }
+                .page .resume-header,
+                .page .resume-content {
+                  padding: 0 22px 0 34px; }
+              .container {
+                page-break-inside: avoid; }
+              .work-container .item {
+                page-break-inside: avoid; }
+              .fa-external-link {
+                display: none; } }
+            
+            /* Components */
+            .info-tag-container {
+              margin-bottom: 5px; }
+              .info-tag-container .fa {
+                font-size: 14px;
+                width: 12px;
+                margin-right: 5px;
+                text-align: center;
+                vertical-align: middle; }
+                .info-tag-container .fa.fa-map-marker {
+                  font-size: 16px; }
+                .info-tag-container .fa.fa-mobile {
+                  font-size: 18px; }
+                .info-tag-container .fa.fa-envelope-o {
+                  font-size: 12px; }
+                .info-tag-container .fa.fa-desktop {
+                  font-size: 11px; }
+                .info-tag-container .fa.fa-external-link {
+                  width: auto;
+                  font-size: inherit;
+                  vertical-align: text-top; }
+              .info-tag-container .info-text {
+                font-size: 9px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 139px; }
+            
+            .references-container .fa {
+              font-size: 14px; }
+        </style>
+    </head>
+    
+    <body>
+        <main id="resume" class="page">
+            <header class="resume-header clearfix">
+                <div class="profile-header pull-left">
+                     <h1>RajeshKanna</h1>
+
+                     <h2>Full Stack Devloper</h2>
+
+                </div>
+                <div class="profile-pic pull-right">
+                    <img src="https://en.gravatar.com/userimage/24487792/c630e7a174d037a0348143ad09f11c7a.jpg?size&#x3D;200" alt="profile-pic"/>
+                </div>
+            </header>
+            <div class="resume-content">
+                <aside class="left-column">
+                    <div class="container about-container">
+                        <div class="title">
+                             <h3>About</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-envelope-o"></i>
+
+                             <h6 class="info-text">v.rajeshkanna@gmail.com</h6>
+
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-mobile"></i>
+
+                             <h6 class="info-text">+919894179312</h6>
+
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-desktop"></i>
+
+                             <h6 class="info-text">
+					                    <a href="https://www.kanna.in" target="_blank">
+					                        www.kanna.in <i class="fa fa-external-link" aria-hidden="true"></i>
+					                    </a>
+					                </h6>
+
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-twitter"></i>
+
+                             <h6 class="info-text">
+					                                     <a href="https://twitter.com/vrajeshkanna1" target="_blank">
+					                                         vrajeshkanna1 <i class="fa fa-external-link" aria-hidden="true"></i>
+					                                     </a>
+					                                 </h6>
+
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-github"></i>
+
+                             <h6 class="info-text">
+					                                     <a href="https://github.com/vrajeshkanna" target="_blank">
+					                                         vrajeshkanna <i class="fa fa-external-link" aria-hidden="true"></i>
+					                                     </a>
+					                                 </h6>
+
+                        </div>
+                        </section>
+                        <div class="skills-container">
+                            <section class="container">
+                                <div class="title">
+                                     <h3>Core Skills And Expertise</h3>
+
+                                    <div class="keyline"></div>
+                                </div>
+                                <ul class="minimal">
+                                    <li>
+                                        <h6>Java/J2EE based Enterprise Applications</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Agile/Scrum Methodologies</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Leadership &amp; Mentoring</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Technical Analysis and Design</h6>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="container">
+                                <div class="title">
+                                     <h3>Languages</h3>
+
+                                    <div class="keyline"></div>
+                                </div>
+                                <ul class="minimal">
+                                    <li>
+                                        <h6>Java</h6>
+                                    </li>
+                                    <li>
+                                        <h6>SQL</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Ruby</h6>
+                                    </li>
+                                    <li>
+                                        <h6>R</h6>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="container">
+                                <div class="title">
+                                     <h3>Java Frameworks</h3>
+
+                                    <div class="keyline"></div>
+                                </div>
+                                <ul class="minimal">
+                                    <li>
+                                        <h6>J2EE</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Spring</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Hibernate</h6>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="container">
+                                <div class="title">
+                                     <h3>Web Development</h3>
+
+                                    <div class="keyline"></div>
+                                </div>
+                                <ul class="minimal">
+                                    <li>
+                                        <h6>Node.JS</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Ruby on Rails</h6>
+                                    </li>
+                                    <li>
+                                        <h6>React.JS</h6>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="container">
+                                <div class="title">
+                                     <h3>Build &amp; Delivery</h3>
+
+                                    <div class="keyline"></div>
+                                </div>
+                                <ul class="minimal">
+                                    <li>
+                                        <h6>Docker</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Jenkins</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Gradle</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Ant</h6>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="container languages-container">
+                            <div class="title">
+                                 <h3>Languages</h3>
+
+                                <div class="keyline"></div>
+                            </div>
+                            <ul class="minimal">
+                                <li>
+                                     <h6>English <em>(Native or bilingual proficiency)</em></h6>
+
+                                </li>
+                                <li>
+                                     <h6>Tamil <em>(Native or bilingual proficiency)</em></h6>
+
+                                </li>
+                                <li>
+                                     <h6>Telugu <em>(Elementary proficiency)</em></h6>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="container interests-container">
+                            <div class="title">
+                                 <h3>Interests</h3>
+
+                                <div class="keyline"></div>
+                            </div>
+                            <section class="item">
+                                 <h4 class="bold">Software</h4>
+
+                                <ul class="minimal">
+                                    <li>Reverse Engineering</li>
+                                    <li>Computer Networks</li>
+                                </ul>
+                            </section>
+                            <section class="item">
+                                 <h4 class="bold">Others</h4>
+
+                                <ul class="minimal">
+                                    <li>Economics</li>
+                                    <li>Photography</li>
+                                    <li>Music</li>
+                                </ul>
+                            </section>
+                        </div>
+                </aside>
+                <div class="right-column">
+                    <div class="container summary-container">
+                        <div class="title">
+                             <h3>Summary</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <p class="summary">Technically sophisticated and experienced IT professional, armed with
+                            over one decade hands-on experience in software engineering and architecture,
+                            performance analysis, android app development, microservices, project management
+                            and facilitating process improvement initiatives. Highly experienced with
+                            core knowledge of software development lifecycle – from concept through
+                            delivery of next-generation applications and customizable solutions.</p>
+                    </div>
+                    <div class="container work-container">
+                        <div class="title">
+                             <h3>Experience</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        <a href="https://navirlabs.com" target="_blank">
+					                            Navir Labs <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">01/2019</span>
+					                        <span class="endDate"> - Present</span>
+					                </h5>
+
+                            </div>
+                             <h4>Founder, Full stack developer</h4>
+
+                            <ul>
+                                <li><a href="https://navirlabs.com/quick_send/"><strong>Quick Send</strong></a> –
+                                    Developed a react native cross-platform application for iPhone and Android
+                                    to send predefined messages, Good morning, Good night quotes in a flash.</li>
+                                <li><a href="http://bit.ly/2NZY35f"><strong>Tamil Memes</strong></a> – Developed
+                                    a react native cross-platform application for iPhone and Android to View
+                                    and Share Latest Tamil memes.</li>
+                                <li><a href="https://goo.gl/h9wmvH"><strong>Tamil Radio</strong></a> – Developed
+                                    a native android application which works seamlessly across Android mobile,
+                                    tablet, Android TV, Chromecast, Android wearable devices.</li>
+                                <li><a href="https://radio.kanna.in"><strong>Desi Radios PWA</strong></a> –
+                                    Developed a responsive PWA application which works seamlessly across Android,
+                                    iPhone, desktops, and tablets.</li>
+                                <li><a href="https://tnea.herokuapp.com/"><strong>TNEA</strong></a> - Developed
+                                    a responsive website which helps Indian engineering students choose the
+                                    right engineering stream based on their cutoff. Site Ranks colleges and
+                                    majors according to previous year’s minimum cutoff for each college and
+                                    major which is not offered by any other sites.</li>
+                                <li><a href="https://paadal.herokuapp.com/"><strong>Paadal</strong></a> - Developed
+                                    a responsive website which indexes Tamil songs from YouTube and provides
+                                    the ability to play songs based on the artist, actor, music director or
+                                    combination of all.</li>
+                            </ul>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        <a href="https://www.codebrahma.com/" target="_blank">
+					                            Codebrahma Technologies <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">06/2017</span>
+					                        <span class="endDate"> - 01/2019</span>
+					                </h5>
+
+                            </div>
+                             <h4>VP of Tech and Delivery</h4>
+
+                            <p class="summary">Lead the operations of India HQ, responsible for Sales, Marketing, Delivery,
+                                and Hiring.</p>
+                            <ul>
+                                <li><strong>Company Growth</strong> - 58% profit growth YoY during my leadership.
+                                    Positioned the company as a JS development company with expertise in React
+                                    and React Native</li>
+                                <li><strong>Delivery</strong> - Delivered projects for YC funded startups like
+                                    Rippling(270M valuation), MinoGames, Dose.Dr as well as big MNCs like Chola
+                                    Finance(Murugappa Groups), Aditya Birla Groups</li>
+                                <li><strong>Process</strong> - Standardised the HR process introducing Zoho
+                                    People. Processes like Onboarding, Offboarding, Leaves, Comp Offs, and
+                                    360° Annual Review were Standardised.</li>
+                                <li><strong>Documentation and Best Practices</strong> - Documented all the
+                                    best practices followed across the projects and boilerplates, templates
+                                    were created. A standard handbook was created.</li>
+                                <li><strong>Hiring</strong> - Standardised the hiring process and brought it
+                                    down to a 10-day cycle also while increasing the efficiency. Created a
+                                    remote campus hiring model and successfully ran it for 5 campuses.</li>
+                                <li><strong>Retaining</strong> - Brought down the attrition to 15% by updating
+                                    company policies, increasing employee engagement, listening to feedback
+                                    and improving the culture, proactively upgrading equipment, etc..</li>
+                                <li><strong>Project Contribution</strong> - Contributed to the projects of
+                                    Mentorhq.com as project manager as well as full stack developer working
+                                    on their FFmpeg based Video merging Node.JS platform and Customer Retention
+                                    Platform, Judge education platforms with React frontend and Rails backend</li>
+                            </ul>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        <a href="https://www.manh.com/" target="_blank">
+					                            Manhattan Associates, US <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">01/2014</span>
+					                        <span class="endDate"> - 06/2017</span>
+					                </h5>
+
+                            </div>
+                             <h4>Principal Analyst, Transportation Management</h4>
+
+                            <p class="summary">Developed solutions to solve complex problems considering software capacity
+                                and limitations, operating time and desired results. Responsible for preparing
+                                design/technical/functional specification documentation. Analyze business
+                                needs and creates software solutions. Communicate directions and provide
+                                guidance to junior programmer/analysts, as required.</p>
+                            <ul>
+                                <li><strong>McKesson Account coding framework</strong> - Enhanced Transportation
+                                    2010 base product for McKesson’s needs and improved the account coding
+                                    performance by 5X by introducing a new account coding framework</li>
+                                <li><strong>ROSS Inbound Enhancements</strong> - Designed and implemented a
+                                    rule-based framework to assign orders’ destination on the fly based on
+                                    defined rules</li>
+                                <li><strong>Performance bottlenecks</strong> - Identified all the performance
+                                    bottlenecks in customer flows by analyzing heap dumps, thread dumps and
+                                    improved the overall system performance. Analyzed ASH, AWR and ADDM reports
+                                    and tuned SQL queries</li>
+                                <li><strong>Security vulnerabilities</strong> - Addressed security vulnerabilities
+                                    like Heartbleed, BEAST etc... based on the IBM security scan results.</li>
+                            </ul>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        <a href="https://www.manh.com/" target="_blank">
+					                            Manhattan Associates, US <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">11/2011</span>
+					                        <span class="endDate"> - 12/2013</span>
+					                </h5>
+
+                            </div>
+                             <h4>Senior Analyst, Transportation Management</h4>
+
+                            <p class="summary">Recommended new development strategies and procedure improvements to the
+                                development team. Drove new features through full the development cycle
+                                from requirements all the way through release.</p>
+                            <ul>
+                                <li><strong>McKesson archive and purge performance</strong> - Enhanced the
+                                    archive and purge stored procedure and achieved 10X improvement. Performed
+                                    analysis with AWR reports and other real-time monitoring queries to identify
+                                    the performance bottlenecks.</li>
+                                <li><strong>Continuous Integration environment for SDN automation</strong> -
+                                    Built a continuous integration environment in Jenkins for my team which
+                                    can create fix packs with the last commit id/git tag as the input.</li>
+                                <li><strong>Git migration &amp; Training</strong> - Migrated all 45 projects
+                                    of my team from clearcase to git. Trained the team on git and established
+                                    repository standards.</li>
+                            </ul>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        <a href="https://www.manh.com/en-in" target="_blank">
+					                            Manhattan Associates, India <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">01/2009</span>
+					                        <span class="endDate"> - 11/2011</span>
+					                </h5>
+
+                            </div>
+                             <h4>Software Engineer, Transportation Management</h4>
+
+                            <p class="summary">Built Java programs and related web interfaces that are consistent with
+                                the objective of stated development and business goals. Took on complex
+                                software development tasks and worked efficiently in troubleshooting and
+                                resolution of system issues.</p>
+                            <ul>
+                                <li><strong>Freight Audit and Pay</strong> - FAP module helps the shippers
+                                    to audit their transportation costs and pay the audited amount to the carrier.
+                                    Developed, enhanced and refactored the module since 2007.</li>
+                                <li><strong>Easy UI for SCOPE Studio</strong> - The development of the user
+                                    interfaces based on Manhattan’s SCPP framework is not developer friendly
+                                    as none of the integrated development environments have a good support
+                                    for this framework. Developed eclipse plug-ins that improve the user interface
+                                    development by adding visual editing capabilities like auto complete and
+                                    drag and drop</li>
+                                <li><strong>XSS filtering and SQL Injection attack prevention</strong> - Identified
+                                    and addressed XSS and SQL Injection vulnerabilities</li>
+                                <li><strong>Retail Routing (Cross Team Development)</strong> - Implemented
+                                    Retail Routing functionality for Warehouse Management through Transportation
+                                    Execution.</li>
+                                <li><strong>SaaS 2010 Upgrade &amp; Enhancement</strong> - TLM SaaS allows
+                                    the customers to access the Transportation application over the cloud for
+                                    their business computing. Developed plan path, MCW, Invoice short pay enhancements
+                                    and other customer requested enhancements.</li>
+                            </ul>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        <a href="https://www.manh.com/en-in" target="_blank">
+					                            Manhattan Associates, India <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">06/2007</span>
+					                        <span class="endDate"> - 12/2008</span>
+					                </h5>
+
+                            </div>
+                             <h4>Associate Software Engineer, Transportation Management</h4>
+
+                            <ul>
+                                <li><strong>Transportation Execution</strong> - Established a bridge between
+                                    Warehouse management system and Transportation Management system. Developed
+                                    TE Planning Engine which plans and routes a given set of orders and improved
+                                    its performance to process 6000 orders per minute.</li>
+                                <li><strong>Manual Load Planning</strong> - The manual Load planning allows
+                                    the WM users to plan/re-plan shipments for the orders which are left out
+                                    unplanned by Consolidation Engine. Single-handedly designed and developed
+                                    the complete UI.</li>
+                                <li><strong>AF Logistics enhancement</strong> - Enhanced the existing Purchase
+                                    Order update functionality, UI for consignment update, Transportation Order
+                                    quantity synchronization, Transportation Order cost recalculations, Shipment
+                                    line item quantity update and Shipment cost adjustments.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="container volunteer-container">
+                        <div class="title">
+                             <h3>Volunteer</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                    <a href="https://www.juniorachievement.org" target="_blank">
+					                        Junior Achievement <i class="fa fa-external-link" aria-hidden="true"></i>
+					                    </a>
+					            </h3>
+
+                                 <h5 class="italic pull-right">
+					                    <span class="startDate">01/2015</span>
+					                    <span class="endDate"> - 01/2015</span>
+					            </h5>
+
+                            </div>
+                             <h5>Mentor</h5>
+
+                            <p class="summary">Junior Achievement&#x27;s Purpose is to inspire and prepare young people
+                                to succeed in a global economy.</p>
+                            <ul>
+                                <li>Through JA Finance Park® Mentored students to personal financial planning
+                                    and career exploration</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="container education-container">
+                        <div class="title">
+                             <h3>Education</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        Birla Institute of Technology and Science, Pilani
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">05/2009</span>
+					                        <span class="endDate"> - 04/2011</span>
+					                </h5>
+
+                            </div>
+                             <h4>Master Software Systems</h4>
+
+                             <h5>7.79</h5>
+
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        National Institute Of Technology, Trichy
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">08/2003</span>
+					                        <span class="endDate"> - 05/2007</span>
+					                </h5>
+
+                            </div>
+                             <h4>Bachelor Chemical Engineering</h4>
+
+                             <h5>7.61</h5>
+
+                        </section>
+                    </div>
+                    <div class="container awards-container">
+                        <div class="title">
+                             <h3>Awards</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        2013 CHOICE Award
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                </h5>
+
+                            </div>
+                             <h5 class="awarder">Manhattan Associates</h5>
+
+                            <p class="summary">For Excellence in Operational Improvement</p>
+                        </section>
+                    </div>
+                </div>
+                </div>
+        </main>
+    </body>
+
+</html>
