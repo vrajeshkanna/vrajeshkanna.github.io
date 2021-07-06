@@ -24,12 +24,12 @@
           "sizes": "144x144"
         }, 
         {
-          "src": "https://dummyimage.com/192/00d1b2/ffffff&text=My+Favorites",
+          "src": "192.png",
           "type": "image/png",
           "sizes": "192x192"
         }, 
         {
-          "src": "https://dummyimage.com/512/00d1b2/ffffff&text=My+Favorites",
+          "src": "512.png",
           "type": "image/png",
           "sizes": "512x512"
         } 
