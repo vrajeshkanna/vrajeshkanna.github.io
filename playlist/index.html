@@ -67,10 +67,18 @@
   </head>
 
   <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">My Playlists</p>
+        <p class="subtitle">
+          My favorite audio, video playlists from Saavn, Spotify & Youtube
+          listed here
+        </p>
+      </div>
+    </section>
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">My Playlists</h1>
-        <h3 class="title is-3 mt-6">Tamil Top Songs</h3>
+        <h3 class="title is-3 mt-1">Tamil Top Songs</h3>
         <iframe
           allow="encrypted-media"
           allowtransparency="true"
@@ -110,6 +118,11 @@
         ></iframe>
       </div>
     </section>
-    <script defer src="sw.js"></script>
+    <script src="sw.js"></script>
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
   </body>
 </html>
