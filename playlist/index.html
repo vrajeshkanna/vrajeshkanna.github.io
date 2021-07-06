@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Favorites</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="description" content="My favorite playlists" />
+    <link rel="manifest" href="manifest.json" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#00d1b2" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#00d1b2" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00d1b2" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      href="images/splash/apple_splash_1242.png"
+      sizes="1242x2208"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="images/splash/apple_splash_750.png"
+      sizes="750x1334"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="images/splash/apple_splash_640.png"
+      sizes="640x1136"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://dummyimage.com/152/00d1b2/ffffff&text=My+Favorites"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="https://dummyimage.com/152/00d1b2/ffffff&text=My+Favorites"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://dummyimage.com/180/00d1b2/ffffff&text=My+Favorites"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="https://dummyimage.com/167/00d1b2/ffffff&text=My+Favorites"
+    />
+    <meta property="og:title" content="Kanna's playlists" />
+    <meta property="og:description" content="My favorite playlists" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kanna.in/playlist" />
+    <meta
+      property="og:image"
+      content="https://dummyimage.com/1200/00d1b2/ffffff&text=My+Favorites"
+    />
+    <meta name="twitter:card" content="summary" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">My Favorite playlists</h1>
+        <h3 class="title is-3">Latest Songs</h3>
+        <iframe
+          height="315"
+          src="https://www.youtube.com/embed/videoseries?list=PLqQlj8XqiTrWcyDRfCWKm_P90rgoSTgyd"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          width="100%"
+        ></iframe>
+        <h3 class="title is-3">Latest Trailers</h3>
+        <iframe
+          height="315"
+          src="https://www.youtube.com/embed/videoseries?list=PLqQlj8XqiTrW5pqIpQZrPWIElqlhKoq_3"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          width="100%"
+        ></iframe>
+        <h3 class="title is-3">Spotify sample</h3>
+        <iframe allow="encrypted-media" allowtransparency="true" frameborder="0" height="232" src="https://open.spotify.com/embed/playlist/6ZqKAo7ECLlFSwOX278S8V" width="100%"></iframe>
+        <h3 class="title is-3">Saavn sample</h3>
+        <iframe allow="encrypted-media" allowtransparency="true" frameborder="0" height="400" src="https://www.jiosaavn.com/embed/playlist/2574965" width="100%"></iframe>
+      </div>
+    </section>
+    <script defer src="sw.js"></script>
+  </body>
+</html>
