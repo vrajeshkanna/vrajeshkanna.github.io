@@ -35,6 +35,7 @@
         } 
         ],
     "start_url": "/playlist",
+    "scope": "/playlist/",
     "background_color": "#00d1b2",
     "theme_color": "#00d1b2",
     "display": "standalone"
